@@ -1,0 +1,23 @@
+<div class="container py-3 mb-4 border-bottom">
+  <table class="table">
+    <thead class="bg-dark text-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Línea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-tr" *ngFor="let vehicle of vehicles">
+        <th scope="row">{{ vehicle.id }}</th>
+        <td>{{ vehicle.marca }}</td>
+        <td>{{ vehicle.linea }}</td>
+        <td>{{ vehicle.modelo }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container" *ngFor="let amount of amountBrand">
+    <p>{{ amount }}</p>
+  </div>
+</div>
